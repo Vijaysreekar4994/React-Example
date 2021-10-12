@@ -1,9 +1,8 @@
 // import logo from "./logo.svg";
 import React from "react";
-import "./App.css";
-import Home from "./home/Home";
+import Home from "./home";
 
-const App = () => {
+const View = () => {
   return (
     <div className="App">
       <header className="header">
@@ -30,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default View;

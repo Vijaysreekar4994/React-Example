@@ -1,17 +1,10 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { createStore, combineReducers } from "redux";
-import View from "./view/App";
-import SelectMultiple from "./reducer/selectMultiple";
-
-const store = createStore(
-  combineReducers({
-    SelectMultiple,
-  })
-);
+import View from "./containers/View";
+import "./App.css";
+import store from "./data";
 
 function App() {
-  console.log(store);
   return (
     <Provider store={store}>
       <View />
